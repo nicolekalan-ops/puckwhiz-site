@@ -39,6 +39,7 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
+    console.log('RESEND_API_KEY prefix:', (process.env.RESEND_API_KEY ?? 'MISSING').slice(0, 10));
     const { error: sendError } = await getResend().emails.send({
       from: FROM,
       to: 'puckwhiz@gmail.com',
