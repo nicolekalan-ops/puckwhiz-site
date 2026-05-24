@@ -114,15 +114,17 @@ export default function Home() {
       {/* ── HERO ────────────────────────────────────────────────── */}
       <section className="pt-16 min-h-screen flex items-center" style={{ background: 'linear-gradient(135deg, #26419C 0%, #1a2d6e 60%, #0f1a42 100%)' }}>
         <div className="max-w-6xl mx-auto px-4 py-24 text-center">
-          <div className="flex justify-center mb-8">
-            <Image src="/puckwhiz-transparent.png" alt="PuckWhiz" width={280} height={80} style={{ height: '80px', width: 'auto' }} />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
+            <Image src="/puckwhiz-transparent.png" alt="PuckWhiz" width={400} height={120} style={{ height: '120px', width: 'auto' }} />
+            <div className="text-left">
+              <h1 className="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
+                Great players are made<br />in driveways.
+              </h1>
+              <p className="text-xl sm:text-2xl text-blue-200 font-medium">
+                You are just one summer away from being a PuckWhiz.
+              </p>
+            </div>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
-            Great players are made<br />in driveways.
-          </h1>
-          <p className="text-xl sm:text-2xl text-blue-200 font-medium mb-4">
-            You are just one summer away from being a PuckWhiz.
-          </p>
           <p className="text-blue-300 text-lg max-w-2xl mx-auto mb-10">
             Track your stickhandling and shooting reps all summer long — in your driveway, basement, or garage. Play baseball, enjoy summer, and still show up to fall tryouts with quicker hands.
           </p>
