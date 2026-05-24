@@ -132,7 +132,7 @@ export default function Home() {
             <a href="#about" className="bg-white text-[#26419C] font-bold px-8 py-4 rounded-xl text-lg hover:bg-blue-50 transition-colors shadow-lg">
               Learn More 🏒
             </a>
-            <a href="#contact" className="border-2 border-white/50 text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-white/10 transition-colors">
+            <a href="#contact" className="bg-[#C8102E] text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-[#a80d26] transition-colors shadow-lg">
               Get In Touch
             </a>
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-14">
-            <span className="text-[#26419C] font-semibold text-sm uppercase tracking-widest">About PuckWhiz</span>
+            <span className="text-[#C8102E] font-semibold text-sm uppercase tracking-widest">About PuckWhiz</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Summer is when good players become great ones.</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">
               PuckWhiz isn&apos;t about sacrificing your summer — it&apos;s about making the most of it. 15 focused minutes a day in the driveway or basement is all it takes to come back sharper in the fall.
@@ -182,7 +182,7 @@ export default function Home() {
                 body: 'This isn\'t about outworking anyone. It\'s about showing up in September with the confidence that comes from thousands of quality touches — ready to compete.',
               },
             ].map((card) => (
-              <div key={card.title} className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <div key={card.title} className="bg-gray-50 rounded-2xl p-6 border border-gray-100 border-t-4" style={{ borderTopColor: '#C8102E' }}>
                 <div className="text-4xl mb-4">{card.emoji}</div>
                 <h3 className="font-bold text-gray-900 text-lg mb-2">{card.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{card.body}</p>
@@ -196,7 +196,7 @@ export default function Home() {
       <section id="features" className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-14">
-            <span className="text-[#26419C] font-semibold text-sm uppercase tracking-widest">Features</span>
+            <span className="text-[#C8102E] font-semibold text-sm uppercase tracking-widest">Features</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Everything your association needs.</h2>
           </div>
 
@@ -209,9 +209,9 @@ export default function Home() {
               { icon: Star, title: 'Association Branded', body: 'Each organization gets their own branded app with custom colors, logo, and age groups. Your players see your identity, not a generic app.' },
               { icon: Mail, title: 'Admin Dashboard', body: 'Coaches and admins can view all player activity, manage rosters, post announcements, and adjust settings — all in one place.' },
             ].map(({ icon: Icon, title, body }) => (
-              <div key={title} className="bg-white rounded-2xl p-6 border border-gray-200 flex gap-4">
-                <div className="shrink-0 w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-[#26419C]" />
+              <div key={title} className="bg-white rounded-2xl p-6 border border-gray-200 flex gap-4 border-l-4" style={{ borderLeftColor: '#C8102E' }}>
+                <div className="shrink-0 w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center">
+                  <Icon className="w-5 h-5 text-[#C8102E]" />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{title}</h3>
@@ -226,19 +226,19 @@ export default function Home() {
       {/* ── PRICING ─────────────────────────────────────────────── */}
       <section id="pricing" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <span className="text-[#26419C] font-semibold text-sm uppercase tracking-widest">Pricing</span>
+          <span className="text-[#C8102E] font-semibold text-sm uppercase tracking-widest">Pricing</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Simple, association-based pricing.</h2>
-          <p className="text-gray-500 text-lg mb-12">One flat rate per association per summer. No per-player fees. No hidden costs.</p>
+          <p className="text-gray-500 text-lg mb-12">Association-based pricing scaled to your roster. No hidden fees. No surprises.</p>
 
           <div className="bg-gradient-to-br from-[#26419C] to-[#1a2d6e] rounded-3xl p-10 text-white shadow-2xl">
-            <div className="inline-block bg-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
+            <div className="inline-block bg-[#C8102E] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
               🚀 Coming Soon
             </div>
             <h3 className="text-3xl font-extrabold mb-2">Association Plan</h3>
             <p className="text-blue-200 mb-8">Full-season access for your entire association — all teams, all age groups.</p>
             <ul className="space-y-3 text-left max-w-xs mx-auto mb-8">
               {[
-                'Unlimited players',
+                'Tiered pricing based on player counts',
                 'Custom association branding',
                 'All age group leaderboards',
                 'Parent approval system',
@@ -263,7 +263,7 @@ export default function Home() {
       <section id="contact" className="py-20 bg-gray-50">
         <div className="max-w-2xl mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="text-[#26419C] font-semibold text-sm uppercase tracking-widest">Contact</span>
+            <span className="text-[#C8102E] font-semibold text-sm uppercase tracking-widest">Contact</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Get in touch.</h2>
             <p className="text-gray-500 mt-3">Interested in PuckWhiz for your association? Have a question? We&apos;d love to hear from you.</p>
           </div>
@@ -356,7 +356,7 @@ export default function Home() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full bg-[#26419C] text-white font-bold py-3 rounded-xl text-sm hover:bg-[#1e337a] transition-colors disabled:opacity-50"
+                className="w-full bg-[#C8102E] text-white font-bold py-3 rounded-xl text-sm hover:bg-[#a80d26] transition-colors disabled:opacity-50"
               >
                 {submitting ? 'Sending...' : 'Send Message 🏒'}
               </button>
