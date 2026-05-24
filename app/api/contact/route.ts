@@ -39,13 +39,18 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    await getResend().emails.send({
+    const { error: sendError } = await getResend().emails.send({
       from: FROM,
       to: 'puckwhiz@gmail.com',
       replyTo: email,
       subject: `PuckWhiz Contact: ${topicLabels[topic] ?? topic} — ${name}`,
       html,
     });
+
+    if (sendError) {
+      console.error('Resend error:', sendError);
+      return NextResponse.json({ error: 'Failed to send message.' }, { status: 500 });
+    }
 
     return NextResponse.json({ success: true });
   } catch (err) {
