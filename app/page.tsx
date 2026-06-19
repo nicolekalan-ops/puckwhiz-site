@@ -369,11 +369,12 @@ export default function Home() {
       <footer className="bg-[#0f1a42] text-white py-10">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Image src="/puckwhiz-transparent.png" alt="PuckWhiz" width={120} height={36} style={{ height: '32px', width: 'auto' }} />
-          <p className="text-blue-300 text-sm">© 2026 PuckWhiz. All rights reserved.</p>
+          <p className="text-blue-300 text-sm">© 2026 Nsquared Insights, LLC. All rights reserved.</p>
           <div className="flex gap-4 text-sm text-blue-300">
             {NAV_LINKS.map((l) => (
               <a key={l.href} href={l.href} className="hover:text-white transition-colors">{l.label}</a>
             ))}
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
       </footer>
